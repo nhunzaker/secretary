@@ -104,7 +104,7 @@
      (fn [[_ part]]
        (cond
         (empty? part) 0
-        (re-matches #"\d+" part) (js/parseInt part)
+        (re-matches #"\d+" part) (js/parseInt part 10)
         :else part))
      parts)))
 
